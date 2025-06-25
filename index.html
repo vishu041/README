@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resume Form</title>
+</head>
+<body>
+  <h2>Resume Submission Form</h2>
+  <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
+    
+    <label>Field Name:</label><br>
+    <input type="text" name="field_name" required><br><br>
+
+    <label>Full Name:</label><br>
+    <input type="text" name="full_name" required><br><br>
+
+    <label>Email Address:</label><br>
+    <input type="email" name="email" required><br><br>
+
+    <label>Phone Number:</label><br>
+    <input type="tel" name="phone" required><br><br>
+
+    <label>Date of Birth:</label><br>
+    <input type="date" name="dob" required><br><br>
+
+    <label>Gender:</label><br>
+    <select name="gender" required>
+      <option value="">Select</option>
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select><br><br>
+
+    <label>Marital Status:</label><br>
+    <select name="marital_status" required>
+      <option value="">Select</option>
+      <option>Single</option>
+      <option>Married</option>
+      <option>Divorced</option>
+    </select><br><br>
+
+    <label>Nationality:</label><br>
+    <input type="text" name="nationality" required><br><br>
+
+    <label>Address:</label><br>
+    <textarea name="address" rows="3" required></textarea><br><br>
+
+    <label>LinkedIn Profile URL:</label><br>
+    <input type="url" name="linkedin"><br><br>
+
+    <label>GitHub Profile URL:</label><br>
+    <input type="url" name="github"><br><br>
+
+    <label>Upload Profile Photo:</label><br>
+    <input type="file" name="photo" accept="image/*"><br><br>
+
+    <label>Upload Resume (PDF only):</label><br>
+    <input type="file" name="resume" accept=".pdf" required><br><br>
+
+    <label>Career Objective:</label><br>
+    <textarea name="objective" rows="4" required></textarea><br><br>
+
+    <label>Highest Qualification:</label><br>
+    <input type="text" name="qualification" required><br><br>
+
+    <label>Name of College / University:</label><br>
+    <input type="text" name="college" required><br><br>
+
+    <label>Year of Graduation:</label><br>
+    <input type="number" name="graduation_year" min="1900" max="2099" required><br><br>
+
+    <label>Technical Skills (e.g., HTML, CSS, JS):</label><br>
+    <textarea name="technical_skills" rows="3"></textarea><br><br>
+
+    <label>Programming Languages Known:</label><br>
+    <textarea name="programming_languages" rows="3"></textarea><br><br>
+
+    <label>Certifications (if any):</label><br>
+    <textarea name="certifications" rows="3"></textarea><br><br>
+
+    <label>Work Experience (Years):</label><br>
+    <input type="number" name="experience" min="0"><br><br>
+
+    <label>Last Company Worked At:</label><br>
+    <input type="text" name="last_company"><br><br>
+
+    <label>Your Job Role / Designation:</label><br>
+    <input type="text" name="designation"><br><br>
+
+    <label>Languages Known:</label><br>
+    <textarea name="languages_known" rows="2"></textarea><br><br>
+
+    <label>Hobbies:</label><br>
+    <textarea name="hobbies" rows="2"></textarea><br><br>
+
+    <label>
+      <input type="checkbox" name="declaration" required>
+      I hereby declare that all information provided is true and authentic.
+    </label><br><br>
+
+    <input type="submit" value="Submit Resume">
+  </form>
+</body>
+</html>
